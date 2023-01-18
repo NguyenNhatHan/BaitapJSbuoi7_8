@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập Js buổi 7-8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center mt-4">Bài tập Js buổi 7-8</h1>
+        <input type="number" id="nhapsoN" class="form-control w-25 mb-2" placeholder="Nhập số n">
+        <button id="btnNhapso" class="btn btn-success bg-secondary mb-4">Nhập số</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="nhapso"></span>
+        </div>
+        <!-- Bài tập 1 -->
+        <h3 class="mt-1">Bài tập 1</h3>
+        <h4 class="mt-3">Tổng số dương:</h4>
+        <button id="btnTinhtong" class="btn btn-success bg-secondary mb-4">Tính tổng</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua1"></span>
+        </div>
+        <!-- Bài tập 2 -->
+        <h3 class="mt-1">Bài tập 2</h3>
+        <h4 class="mt-3">Đếm số dương:</h4>
+        <button id="btnDemso" class="btn btn-success bg-secondary mb-4">Đếm số</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua2"></span>
+        </div>
+        <!-- Bài tập 3 -->
+        <h3 class="mt-1">Bài tập 3</h3>
+        <h4 class="mt-3">Tìm số nhỏ nhất:</h4>
+        <button id="btnTimso" class="btn btn-success bg-secondary mb-4">Tìm số nhỏ nhất</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua3"></span>
+        </div>
+        <!-- Bài tập 4 -->
+        <h3 class="mt-1">Bài tập 4</h3>
+        <h4 class="mt-3">Tìm số dương nhỏ nhất:</h4>
+        <button id="btnTimsoduong" class="btn btn-success bg-secondary mb-4">Tìm số dương nhỏ nhất</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua4"></span>
+        </div>
+         <!-- Bài tập 5 -->
+         <h3 class="mt-1">Bài tập 5</h3>
+         <h4 class="mt-3">Tìm số chẵn cuối cùng</h4>
+         <button id="btnTimsochan" class="btn btn-success bg-secondary mb-4">Tìm số chẵn</button>
+         <div class="alert alert-secondary">
+             <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua5"></span>
+         </div>
+          <!-- Bài tập 6 -->
+          <h3 class="mt-1">Bài tập 6</h3>
+          <h4 class="mt-3">Đổi chỗ</h4>
+          <input type="number" id="vitri1" class="form-control w-25 mb-2" placeholder="Nhập vị trí 1">
+          <input type="number" id="vitri2" class="form-control w-25 mb-2" placeholder="Nhập vị trí 2">
+          <button id="btnDoicho" class="btn btn-success bg-secondary mb-4">Đổi chỗ</button>
+          <div class="alert alert-secondary">
+              <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua6"></span>
+          </div>
+          <!-- Bài tập 7 -->
+         <h3 class="mt-1">Bài tập 7</h3>
+         <h4 class="mt-3">Sắp xếp theo thứ tự tăng dần</h4>
+         <button id="btnSapxep" class="btn btn-success bg-secondary mb-4">Sắp xếp</button>
+         <div class="alert alert-secondary">
+             <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua7"></span>
+         </div>
+         <!-- Bài tập 8 -->
+         <h3 class="mt-1">Bài tập 8</h3>
+         <h4 class="mt-3">Tìm số nguyên tố đầu tiên</h4>
+         <button id="btnTimsoNt" class="btn btn-success bg-secondary mb-4">Tìm số nguyên tố</button>
+         <div class="alert alert-secondary">
+             <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua8"></span>
+         </div>
+         <!-- Bài tập 9 -->
+         <h3 class="mt-1">Bài tập 9</h3>
+         <h4 class="mt-3">Đếm số nguyên</h4>
+         <input type="number" id="nhapsoN2" class="form-control w-25 mb-2" placeholder="Nhập số">
+        <button id="btnNhapso2" class="btn btn-success bg-secondary mb-4">Nhập số</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="nhapso2"></span>
+        </div>
+        <button id="demsonguyen" class="btn btn-success bg-secondary mb-4">Đếm số nguyên</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua9"></span>
+        </div>
+        <!-- Bài tập 10 -->
+        <h3 class="mt-1">Bài tập 10</h3>
+        <h4 class="mt-3">So sánh số lượng số âm và số dương</h4>
+        <button id="btnSosanh" class="btn btn-success bg-secondary mb-4"> So sánh</button>
+        <div class="alert alert-secondary">
+            <i class="fa fa-hand-point-right" style="color: rgb(246, 199, 11);"></i><span id="ketqua10"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
